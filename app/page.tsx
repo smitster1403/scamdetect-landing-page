@@ -10,61 +10,89 @@ export default function Home() {
       
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative" style={{ backgroundColor: 'rgb(16, 16, 16)' }}>
-        {/* Subtle background elements */}
+        {/* Subtle background gradient */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl" style={{ backgroundColor: 'rgb(1, 120, 207)' }}></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl" style={{ backgroundColor: 'rgb(0, 169, 71)' }}></div>
         </div>
         
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center">
-            <div className="mb-8">
-              <span className="inline-block px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wider" style={{ backgroundColor: 'rgba(1, 120, 207, 0.1)', color: 'rgb(1, 120, 207)' }}>
-                Africa's Leading Defense Network
-              </span>
+        <div className="max-w-7xl mx-auto relative z-10 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Text Content */}
+            <div className="text-left">
+              <div className="mb-8">
+                <span className="inline-block px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wider" style={{ backgroundColor: 'rgba(1, 120, 207, 0.15)', color: 'rgb(1, 120, 207)' }}>
+                  Africa's Leading Defense Network
+                </span>
+              </div>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ color: 'rgb(255, 255, 255)' }}>
+                <span style={{ color: 'rgb(1, 120, 207)' }}>
+                  ScamDetect
+                </span>
+                <br />
+                <span className="text-4xl sm:text-4xl lg:text-5xl font-medium" style={{ color: 'rgb(255, 255, 255)' }}>
+                  Enterprise Anti-Fraud
+                </span>
+                <br />
+                <span className="text-3xl sm:text-3xl lg:text-4xl font-light" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+                  Intelligence Platform
+                </span>
+              </h1>
+              <p className="text-lg sm:text-xl lg:text-2xl mb-10 font-light leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+                Advanced threat detection and risk intelligence designed for modern enterprises. 
+                Trusted by businesses across Africa for comprehensive digital security.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://app.scamdetect.co.bw" 
+                  className="group px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl text-center"
+                  style={{ backgroundColor: 'rgb(1, 120, 207)', color: 'rgb(255, 255, 255)' }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(0, 169, 71)'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)'}
+                >
+                  Access Platform
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
+                </a>
+                <button 
+                  className="border-2 px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  style={{ borderColor: 'rgb(1, 120, 207)', color: 'rgb(1, 120, 207)', backgroundColor: 'transparent' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)';
+                    e.currentTarget.style.color = 'rgb(255, 255, 255)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                    e.currentTarget.style.color = 'rgb(1, 120, 207)';
+                  }}
+                >
+                  Request Demo
+                </button>
+              </div>
             </div>
-            <h1 className="text-5xl sm:text-7xl font-bold mb-6 leading-tight" style={{ color: 'rgb(255, 255, 255)' }}>
-              <span style={{ color: 'rgb(1, 120, 207)' }}>
-                ScamDetect
-              </span>
-              <br />
-              <span className="text-4xl sm:text-5xl font-medium" style={{ color: 'rgb(255, 255, 255)' }}>
-                Enterprise Anti-Fraud
-              </span>
-              <br />
-              <span className="text-3xl sm:text-4xl font-light" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-                Intelligence Platform
-              </span>
-            </h1>
-            <p className="text-xl sm:text-2xl mb-10 max-w-4xl mx-auto font-light leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-              Advanced threat detection and risk intelligence designed for modern enterprises. 
-              Trusted by businesses across Africa for comprehensive digital security.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a 
-                href="https://app.scamdetect.co.bw" 
-                className="group px-10 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
-                style={{ backgroundColor: 'rgb(1, 120, 207)', color: 'rgb(255, 255, 255)' }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(0, 169, 71)'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)'}
-              >
-                Access Platform
-                <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </a>
-              <button 
-                className="border-2 px-10 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
-                style={{ borderColor: 'rgb(1, 120, 207)', color: 'rgb(1, 120, 207)', backgroundColor: 'transparent' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)';
-                  e.currentTarget.style.color = 'rgb(255, 255, 255)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = 'rgb(1, 120, 207)';
+
+            {/* Right Side - Video Card */}
+            <div className="relative">
+              <div 
+                className="rounded-3xl overflow-hidden shadow-2xl"
+                style={{
+                  boxShadow: '0 25px 50px -12px rgba(1, 120, 207, 0.4), 0 0 0 1px rgba(1, 120, 207, 0.2)'
                 }}
               >
-                Request Demo
-              </button>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/Stop and Check  CSA's Sixth National Cybersecurity Campaign (15 secs) - Cyber Security Agency of Singapore (1080p, h264).mp4" type="video/mp4" />
+                </video>
+              </div>
+              {/* Decorative glow behind video */}
+              <div 
+                className="absolute -inset-4 rounded-3xl opacity-30 blur-2xl -z-10"
+                style={{ backgroundColor: 'rgb(1, 120, 207)' }}
+              ></div>
             </div>
           </div>
         </div>
