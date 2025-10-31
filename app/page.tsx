@@ -48,7 +48,7 @@ export default function Home() {
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(0, 169, 71)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)'}
               >
-                Launch Platform
+                Access Platform
                 <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
               </a>
               <button 
@@ -229,7 +229,7 @@ export default function Home() {
               e.currentTarget.style.color = 'rgb(0, 169, 71)';
             }}
           >
-            Launch ScamDetect Platform
+            Access ScamDetect Platform
             <span className="ml-3 group-hover:translate-x-1 transition-transform inline-block">→</span>
           </a>
           <div className="mt-8">
@@ -277,7 +277,7 @@ export default function Home() {
                 <li><a href="#" className="transition-colors" style={{ color: 'rgba(255, 255, 255, 0.6)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(255, 255, 255)'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)'}>Security Features</a></li>
                 <li><a href="#" className="transition-colors" style={{ color: 'rgba(255, 255, 255, 0.6)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(255, 255, 255)'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)'}>Analytics Dashboard</a></li>
                 <li><a href="#" className="transition-colors" style={{ color: 'rgba(255, 255, 255, 0.6)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(255, 255, 255)'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.6)'}>Enterprise Solutions</a></li>
-                <li><a href="https://app.scamdetect.co.bw" className="transition-colors" style={{ color: 'rgb(1, 120, 207)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(0, 169, 71)'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgb(1, 120, 207)'}>Launch Platform</a></li>
+                <li><a href="https://app.scamdetect.co.bw" className="transition-colors" style={{ color: 'rgb(1, 120, 207)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(0, 169, 71)'} onMouseLeave={(e) => e.currentTarget.style.color = 'rgb(1, 120, 207)'}>Access Platform</a></li>
               </ul>
             </div>
             

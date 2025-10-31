@@ -38,7 +38,7 @@ const NavBar = () => {
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(0, 169, 71)'}
                                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)'}
                             >
-                                Launch Platform
+                                Access Platform
                             </a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ const NavBar = () => {
                         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(0, 169, 71)'}
                         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(1, 120, 207)'}
                     >
-                        Launch Platform
+                        Access Platform
                     </a>
                 </div>
             </div>
